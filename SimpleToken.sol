@@ -6,3 +6,7 @@ contract FunctionTypes{
     function add() external{
         number = number + 1;
     }
+
+    function addPure(uint256 _number) external pure returns(uint256 new_number){
+        new_number = _number+1;
+    }
